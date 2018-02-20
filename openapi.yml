@@ -8,26 +8,35 @@ info:
   termsOfService:
   contact:
     name: davidlday
-    url: http://www.prosegrinder.com
+    url: https://www.prosegrinder.com
     email: dday376@gmail.com
   license:
     name: GPL-3.0
-    url:
+    url: https://github.com/davidlday/storyplow-api/LICENSE
 
 servers:
-  - url: https://storyplow.prosegrinder.com/api
+  - url: https://api.prosegrinder.com/storyplow
     description: Production server
 
 paths:
   /publishers:
     get:
       tags:
-      summary:
-      description:
-      operationId:
+      - Publishers
+      summary: getPublishers
+      description: Gets the registered publishers
+      operationId: GetPublishers
       externalDocs:
+        description: More Details
+        url: "https://github.com/davidlday/storyplow-api"
       parameters:
       responses:
+        200:
+          description: Publishers Response
+          content:
+            application/json:
+              schema:
+                description: Success
       # deprecated:
       # security:
       # servers:
@@ -37,10 +46,13 @@ paths:
   /markets:
     get:
       tags:
-      summary:
-      description:
-      operationId:
+      - Markets
+      summary: getMarkets
+      description: Gets markets for registered publishers
+      operationId: GetMarkets
       externalDocs:
+        description: More Details
+        url: "https://github.com/davidlday/storyplow-api"
       parameters:
       responses:
       # deprecated:
@@ -52,10 +64,13 @@ paths:
   /calls:
     get:
       tags:
-      summary:
-      description:
-      operationId:
+      - Calls
+      summary: getCalls
+      description: Gets calls for markets of registered publishers
+      operationId: GetCalls
       externalDocs:
+        description: More Details
+        url: "https://github.com/davidlday/storyplow-api"
       parameters:
       responses:
       # deprecated:
@@ -67,10 +82,13 @@ paths:
   /submissions:
     get:
       tags:
-      summary:
-      description:
-      operationId:
+      - Submissions
+      summary: getSubmissions
+      description: Gets work submitted to calls
+      operationId: GetSubmissions
       externalDocs:
+        description: More Details
+        url: "https://github.com/davidlday/storyplow-api"
       parameters:
       responses:
       # deprecated:
@@ -81,6 +99,8 @@ paths:
 
 
 components:
+  schemas:
+    Response:
 
 security:
 
