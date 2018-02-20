@@ -8,25 +8,76 @@ info:
   termsOfService:
   contact:
     name: davidlday
-    url: http://prosegrinder.com
+    url: http://www.prosegrinder.com
     email: dday376@gmail.com
   license:
     name: GPL-3.0
     url:
 
 servers:
-  - url: https://storyplow.prosegrinder.com
+  - url: https://storyplow.prosegrinder.com/api
     description: Production server
 
 paths:
   /publishers:
     get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+      # deprecated:
+      # security:
+      # servers:
+      # requestBody:
+      # callbacks:
 
   /markets:
     get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+      # deprecated:
+      # security:
+      # servers:
+      # requestBody:
+      # callbacks:
 
   /calls:
     get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+      # deprecated:
+      # security:
+      # servers:
+      # requestBody:
+      # callbacks:
+
+  /submissions:
+    get:
+      tags:
+      summary:
+      description:
+      operationId:
+      externalDocs:
+      parameters:
+      responses:
+      # deprecated:
+      # security:
+      # servers:
+      # requestBody:
+      # callbacks:
 
 
 components:
