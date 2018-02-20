@@ -1,0 +1,38 @@
+# http://idratherbewriting.com/learnapidoc/pubapis_openapi_step4_paths_object.html
+openapi: "3.0.0"
+
+info:
+  title: StoryPlow
+  description: "Working API for StoryPlow Submission Management System."
+  version: "1.0"
+  termsOfService:
+  contact:
+    name: davidlday
+    url: http://prosegrinder.com
+    email: dday376@gmail.com
+  license:
+    name: GPL-3.0
+    url:
+
+servers:
+  - url: https://storyplow.prosegrinder.com
+    description: Production server
+
+paths:
+  /publishers:
+    get:
+
+  /markets:
+    get:
+
+  /calls:
+    get:
+
+
+components:
+
+security:
+
+tags:
+
+externalDocs:
