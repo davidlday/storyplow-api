@@ -100,7 +100,28 @@ paths:
 
 components:
   schemas:
-    Response:
+    PublisherResponse:
+      title: publisher response
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        ownerid:
+          type: string
+    MarketResponse:
+      title: market response
+      type: object
+      properties:
+        id:
+          type: string
+        publisher_id:
+          type: string
+        name:
+          type: string
+
+
 
 security:
 
