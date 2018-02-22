@@ -30,13 +30,23 @@ paths:
         description: More Details
         url: "https://github.com/davidlday/storyplow-api"
       parameters:
+        - name: limit
+          in: body
+          description: Number of publishers returned
+          schema:
+            type: integer
+            minimum: 5
+            maximum: 20
+            example: 10
       responses:
         200:
-          description: Publishers Response
+          description: Success
           content:
             application/json:
               schema:
-                description: Success
+                type: array
+                items:
+                  $ref: '#/components/schemas/Publishers'
       # deprecated:
       # security:
       # servers:
@@ -100,23 +110,23 @@ paths:
 
 components:
   schemas:
-    PublisherResponse:
-      title: publisher response
+    Publishers:
+      title: publisher
       type: object
       properties:
         id:
           type: string
-        name:
+        publisher name:
           type: string
-        ownerid:
+        ownerId:
           type: string
-    MarketResponse:
-      title: market response
+    Markets:
+      title: market
       type: object
       properties:
         id:
           type: string
-        publisher_id:
+        publisherId:
           type: string
         name:
           type: string
